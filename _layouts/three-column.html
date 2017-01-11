@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include head.html %}
+
+<body>
+
+{% include header.html %}
+
+<div id="content-wrapper">
+  <div id="content">
+    <div class="5grid-layout">
+      <div class="row">
+        <div class="12u">
+          <div id="breadcrumb">Olet tässä: {{ page.breadcrumb }}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="5grid-layout">
+      <div class="row">
+        <div class="3u">
+          {% assign leftUp = {{page.include_left_up}} %}
+          {% assign leftDown = {{page.include_left_down}} %}
+          {% include {{leftUp}} %}
+          {% include {{leftDown}} %}
+        </div>
+        <div class="6u mobileUI-main-content">
+          {{ content }}
+        </div>
+        <div class="3u">
+          {% assign rightUp = {{page.include_right_up}} %}
+          {% assign rightDown = {{page.include_right_down}} %}
+          {% include {{rightUp}} %}
+          {% include {{rightDown}} %}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% include footer.html %}
+
+</body>
+
+</html>

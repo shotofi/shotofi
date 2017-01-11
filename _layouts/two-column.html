@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include head.html %}
+
+<body>
+
+{% include header.html %}
+
+<div id="content-wrapper">
+  <div id="content">
+    <div class="5grid-layout">
+      <div class="row">
+        <div class="12u">
+          <div id="breadcrumb">Olet tässä: {{ page.breadcrumb }}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="5grid-layout">
+      <div class="row">
+        <div class="3u">
+          {% assign left = {{page.include_left}} %}
+          {% include {{left}} %}
+        </div>
+        <div class="9u mobileUI-main-content">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% include footer.html %}
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+#header-wrapper h1 { background: url("../images/skds_logo.png") no-repeat 10px 2px; }
+
+#unitext { position: absolute; top: 31px; right: 85px; }
+#unilogo { position: absolute; top: 15px; right: 0; }
+
+#header h1 { padding-left: 130px; width: 400px; height: 100px; line-height: 40px; bottom: 20px; padding-top: 10px; font-family: 'Ubuntu Condensed', sans-serif; font-weight: bold; letter-spacing: -2px;}
+#slogan { position: absolute; top: 121px; left: 132px; color: whiteSmoke; font-style: italic; }
+
+#header nav { bottom: 30px; }
+
+nav li { display: inline-block; padding-top: 20px;}
+nav li:nth-child(2) { background: url("../images/tikku-ukko2.png") no-repeat 0px 0px; }
+nav li:nth-child(3) { background: url("../images/tikku-ukko3.png") no-repeat 0px 0px; }
+nav li:nth-child(4) { background: url("../images/tikku-ukko4.png") no-repeat 0px 0px; }
+nav li:nth-child(5) { background: url("../images/tikku-ukko1.png") no-repeat 0px 0px; }
+
+img.flag  {width: 20px; height: 10px;}
+
+#finnish { position: absolute; bottom: 5px; right: 30px; }
+#english { position: absolute; bottom: 5px; right: 0px; }
+
+.fb-like span { height: 25px !important; }
+
+#content-wrapper {padding: 0;}
+
+.tapahtumakalenteri span { display: inline-block; margin-right: 10px; font-weight: bold; }
+.alkeiskurssi-mainos strong { font-weight: bold; }
+
+.flexslider.right { float: right; width: 500px; }
+.harjoittelu.harjoistusajat  { min-height:  650px !important; }
+.harjoittelu .harjoitusajat-list { margin-left: 20px; }
+.harjoittelu .harjoitusajat-list ul { margin-left: 20px; }
+.harjoittelu .harjoitusajat-list li { list-style: disc outside; }
+
+.harjoitusajat-list strong {font-weight: bold;}
+
+.salietiketti ul { margin-left: 20px; }
+.salietiketti li { list-style: disc outside; }
+
+.camp-times td { padding-right: 20px; }
+
+.alkeiskurssi dl { margin: 20px 0 0 20px;}
+.alkeiskurssi dd { margin-left: 40px;}
+
+.ilmo label, .ilmo textarea { display: inline-block; width: 250px; vertical-align: top;}
+
+img.email { vertical-align: middle; padding-bottom: 2px; }
+
+.menu-galleries img { max-width: 70px; min-width: 70px; margin-right: 5px;}
+.menu-galleries a { vertical-align: top; }
