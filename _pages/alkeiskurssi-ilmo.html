@@ -1,0 +1,58 @@
+---
+title: Ilmoittautu alkeiskurssille
+breadcrumb: Alkeiskurssi > Ilmoittaudu alkeiskurssille
+layout: two-column2
+permalink: /alkeiskurssi-ilmo.html
+include_right: snippets/alkeiskurssi-ohjelma.html
+---
+
+<section class="alkeiskurssi">
+  <header>
+    <h2>ILMOITTAUDU ALKEISKURSSILLE</h2>
+  </header>
+
+  <p>
+    Ilmoittaudu alkeiskurssille täyttämällä oheiset kentät. Sähköpostiosoitteesi lisätään seuran sähköpostilistalle, jolla
+    tiedotetaan harjoituksiin liittyvistä asioista.
+  </p>
+
+  <form class="ilmo" action="http://shoto.fi/cgi-sys/FormMail.cgi">
+    <input type="hidden" name="recipient" value="alkeiskurssi@shoto.fi" />
+    <input type="hidden" name="subject" value="Ilmoittautuminen alkeiskurssille kevät 2017" />
+    <input type=hidden name="required" value="firstname,lastname,email,city,birthdate,status">
+    <input type=hidden name="redirect" value="http://www.shoto.fi/alkeiskurssi-ilmo-ok.html">
+
+    <label for="firstname">Etunimi *</label> <input type="text" id="firstname" name="firstname" maxlength="255" /><br>
+
+    <label for="lastname">Sukunimi *</label> <input type="text" id="lastname" name="lastname" maxlength="255" /><br>
+
+    <label for="email">Sähköpostiosoite *</label> <input type="text" id="email" name="email" maxlength="255" /><br/>
+
+    <label for="city">Kotikunta *</label> <input type="text" id="city" name="city" maxlength="255" /><br/>
+
+    <label for="birthdate">Syntymäaika (pp.kk.vvvv) *</label> <input type="text" id="birthdate" name="birthdate" maxlength="255" /><br/>
+
+    <label for="status">Opiskelupaikka *</label>
+    <select id="status" name="status">
+      <option value="Valitse...">Valitse...</option>
+      <option value="perus-aalto">perusopiskelija Aalto</option>
+      <option value="perus-hy">perusopiskelija HY</option>
+      <option value="jatko-aalto">jatko-opiskelija Aalto</option>
+      <option value="jatko-hy">jatko-opiskelija HY</option>
+      <option value="henkilo-aalto">henkilökuntaa Aalto</option>
+      <option value="henkilo-hy">henkilökuntaa HY</option>
+      <option value="opiskelu-muu">muu opiskelupaikka</option>
+      <option value="muuta">en opiskele tai ole töissä Aalto/HY:ssä</option>
+    </select>
+    <br/>
+
+    <label for="howto">Kuinka sait tietää kurssistamme?</label> <textarea id="howto" name="howto" rows="5" cols="80"></textarea><br/>
+
+    <label for="info">Muuta tietoa</label> <textarea id="info" name="info" rows="5" cols="80"></textarea><br/>
+
+    <input type="submit" name="submit" value="Ilmoittaudu">
+
+  </form>
+
+
+</section>
