@@ -16,8 +16,7 @@
 title: Shotokai Karate - Shoto ry
 email: karate@shoto.fi
 description: > # this means to ignore newlines until "baseurl:"
-  Shoto is a Shotokai-style karate club in close cooperation with Aalto University
-  in Helsinki, Finland. Our club combines classic Shotokai-style tradition with a modern twist.
+  Not used.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: shotofi
