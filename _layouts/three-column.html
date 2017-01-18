@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-{% include head.html %}
+{% assign head = 'head_'  | append: page.lang | append: '.html' %}
+{% include {{head}} %}
 
 <body>
 
-{% include header.html %}
+{% assign header = 'header_'  | append: page.lang | append: '.html' %}
+{% include {{header}} %}
 
 <div id="content-wrapper">
   <div id="content">
@@ -40,7 +42,8 @@
   </div>
 </div>
 
-{% include footer.html %}
+{% assign footer = 'footer_'  | append: page.lang | append: '.html' %}
+{% include {{footer}} %}
 
 </body>
 
