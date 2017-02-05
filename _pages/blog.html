@@ -1,0 +1,29 @@
+---
+title: Blogit
+breadcrumb: Harjoittelu > Blogit
+layout: two-column
+permalink: /blog.html
+include_left: menus/menu-harjoittelu.html
+lang: fi
+---
+
+<section class="harjoittelu blog">
+  <header>
+    <h2>BLOGIPOSTAUKSET</h2>
+  </header>
+
+  {% for post in site.posts %}
+
+  <div>
+    {{ post.date | date: "%b %-d, %Y" }}
+    »
+    <span class='post-title'>
+      <a href="{{ site.path }}{{ post.url }}">{{ post.title }}</a>
+    </span>
+  </div>
+
+  {% endfor %}
+
+
+</section>
+
