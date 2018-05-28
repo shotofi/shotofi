@@ -31,5 +31,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - shotofi.iml
+  - vendor
 
 include: ['_pages']
