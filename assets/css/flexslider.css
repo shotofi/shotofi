@@ -278,3 +278,7 @@ html[xmlns] .flexslider .slides {
     right: 10px;
   }
 }
+.flex-prev,
+.flex-next {
+  font-size: 0;
+}
