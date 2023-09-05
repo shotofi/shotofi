@@ -1,0 +1,3 @@
+<FilesMatch "\.(jpg|jpeg|png)$">
+    Header set Content-Type image/jpeg
+</FilesMatch>

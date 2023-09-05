@@ -33,4 +33,4 @@ exclude:
   - shotofi.iml
   - vendor
 
-include: ['_pages']
+include: ['_pages', '.htaccess']
